@@ -1,7 +1,3 @@
-# Survival-Prediction
-Titanic Survival Prediction using Airflow, Redis, Prometheus/Grafana
-
-
 # 🛠️ Titanic Survival Prediction with Astro Airflow, Redis, Prometheus & Grafana
 
 An end-to-end machine learning pipeline using **Astro Airflow**, **Redis feature store**, **SQL**, and **ML Monitoring** via **Prometheus and Grafana**, designed to predict Titanic passenger survival.
