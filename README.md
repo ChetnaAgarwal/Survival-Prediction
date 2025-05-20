@@ -30,47 +30,6 @@ This project demonstrates a full-stack data engineering and machine learning sys
 
 ---
 
-## 🧱 Project Architecture
-
--- Project Architecture
-
-                +--------------------+
-                |   GCP Bucket (CSV) |
-                +--------------------+
-                          |
-               ETL (Astro Airflow)
-                          |
-           +--------------+--------------+
-           |                             |
-   +---------------+             +--------------------+
-   | PostgreSQL DB |             | Feature Store (Redis)|
-   +---------------+             +--------------------+
-           |                             |
-           |                     +--------------------+
-           |                     |  Drift Detection   |
-           |                     |   (Alibi Detect)   |
-           |                     +---------+----------+
-           |                               |
-   +-------v--------+             +--------v---------+
-   | Model Training | <---------> | Feature Extraction|
-   +----------------+             +-------------------+
-            |
-      +-----v------+
-      | Flask App  |
-      +------------+
-            |
- +----------v----------+
- |  Prometheus (Metrics)|
- +----------------------+
-            |
-    +-------v--------+
-    | Grafana Dashboard |
-    +-------------------+
-
-
-
----
-
 ## 🛠️ Key Features
 
 ### ✅ ETL with Astro Airflow
